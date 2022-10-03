@@ -1,0 +1,429 @@
+<!-- 
+Team Members:    
+1. Hemaraj Jupudi (1001966645)
+2. Ravi Naga Sai Kurapati (1002027855)
+3. Anil Kumar Kanamaneni (1002034161) -->
+
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial -scale=1.0">
+    <title>UTA Book Store</title>
+    <link rel="stylesheet" href="Student.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <section class="sub-header">
+        <nav>
+            <a href=""><img src="images/UTA.png" </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="source.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="LoginSignup.html">Login/Register</a></li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Users</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="SuperAdmin.html">SuperAdmin </a>
+                                <a href="SchoolAdmin.html">School Admin</a>
+                                <a href="BusinessOwner.html">Business Owner</a>
+                                <a href="Student.html">Student</a>
+                            </div>
+                        </div>
+                        <script>
+                            /* When the user clicks on the button, 
+                            toggle between hiding and showing the dropdown content */
+                            function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                            }
+
+                            // Close the dropdown if the user clicks outside of it
+                            window.onclick = function (event) {
+                                if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                        </script>
+                    </ul>
+                </div>
+        </nav>
+        <h1>Student Profile</h1>
+    </section>
+</head>
+
+<body>
+
+    <!--------------- Student Content ---------------->
+    <div id="content">
+        <div id="left">
+
+            <div class="profile-card">
+                <div class="image-container">
+                    <img src="images/student.png" style="width: 90%" <div class="title">
+                    <h2>Details</h2>
+                </div>
+                <div class="main-container"></div>
+                <p>Name: Robert Jr</p>
+                <p>Email: robertjr@uta.mav.com</p>
+                <p>Student ID: 11324567</p>
+                <p>Major: Computer Science</p>
+                <button>Edit Profile</button>
+            </div>
+</body>
+</div>
+</div>
+
+</div>
+
+
+<div id="right">
+    <div>
+        <h2>Checkout Other Student Profiles...</h2>
+
+        <p>Search:</p>
+        <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="main">
+        <div>
+            <h2>List Of Products</h2>
+            <button>Add/Remove Products</button>
+            <button>Buy/Return Products</button>
+        </div>
+
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+
+
+        <div>
+            <h2>List Of Clubs</h2>
+            <button>Add/ Delete Clubs</button>
+            <button>Join/Leave Clubs</button>
+        </div>
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<div id="bottom">
+    <div class="main">
+        <button>Post Content</button>
+        <h2>List Of Posts</h2>
+
+
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button class="open-button" onclick="openForm()">Chat with Business Owners</button>
+
+<div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+
+
+<section class="footer">
+    <Button>Explore Businesses on Campus</Button>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p> Made By Team 9</i></p>
+</section>
+
+
+
+</body>
+<!---- Footer -->
+<!-- <footer>
+
+    <section class="footer">
+        <Button>Explore Businesses on Campus</Button>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made By Team 9</i></p>
+    </section>
+
+</footer> -->
+
+
+</html>

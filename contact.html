@@ -1,0 +1,121 @@
+<!-- 
+Team Members:  
+1. Hemaraj Jupudi (1001966645)
+2. Ravi Naga Sai Kurapati (1002027855)
+3. Anil Kumar Kanamaneni (1002034161) -->
+
+<html>
+
+<head>
+  <meta name="viewport" content="with=device-width, initial -scale=1.0">
+  <title>UTA Book Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href=""><img src="images/UTA.png" </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="source.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="LoginSignup.html">Login/Register</a></li>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Users</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="SuperAdmin.html">SuperAdmin </a>
+                <a href="SchoolAdmin.html">School Admin</a>
+                <a href="BusinessOwner.html">Business Owner</a>
+                <a href="Student.html">Student</a>
+              </div>
+            </div>
+            <script>
+              /* When the user clicks on the button, 
+              toggle between hiding and showing the dropdown content */
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
+            </script>
+          </ul>
+        </div>
+    </nav>
+    <h1>Contact</h1>
+  </section>
+
+  <!--------------- Contact US Content ---------------->
+  <link rel="stylesheet" href="styleContact.css" />
+  <div class="container">
+    <div style="text-align:center">
+      <!-- <h2>Contact Us</h2> -->
+
+      <h2 style="margin-top: 20px;">Contact US</h2>
+      <p style="font-size: 15px;"> Address: 400 Spaniolo Drive Arlington, TX US 76010-1628</p>
+      <p style="font-size: 15px;"> Reach us at: (458) 999-9999 </p>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+      <h2 style="margin-top: 20px;">Additional Information</h2>
+      <p style="font-size: 15px;"> Pickup location Same as address </p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="/images/contactpic.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!---- Footer -->
+  <section class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p> Made By Team 9</i></p>
+  </section>
+
+
+</body>
+
+</html>

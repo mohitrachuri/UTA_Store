@@ -1,0 +1,150 @@
+<!-- 
+Team Members:
+1. Hemaraj Jupudi (1001966645)
+2. Ravi Naga Sai Kurapati (1002027855)
+3. Anil Kumar Kanamaneni (1002034161) -->
+
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial -scale=1.0">
+    <title>UTA Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href=""><img src="images/UTA.png" </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="source.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="LoginSignup.html">Login/Register</a></li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Users</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="SuperAdmin.html">SuperAdmin </a>
+                                <a href="SchoolAdmin.html">School Admin</a>
+                                <a href="BusinessOwner.html">Business Owner</a>
+                                <a href="Student.html">Student</a>
+                            </div>
+                        </div>
+                        <script>
+                            /* When the user clicks on the button, 
+                            toggle between hiding and showing the dropdown content */
+                            function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                            }
+
+                            // Close the dropdown if the user clicks outside of it
+                            window.onclick = function (event) {
+                                if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                        </script>
+                    </ul>
+                </div>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!--------------- About Us Content ---------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1> Welcome to UTA'S Largest Book Collection Center</h1>
+                <p> Shop University Of Texas At Arlington Apparel, Textbooks, Merchandise and Gifts at the Mavericks
+                    store and Join the clubs in school.</p>
+                <a href="" class="hero-btn red-btn">Explore Now</a>
+            </div>
+
+            <div class="about-col">
+                <img src="images/about-us.jpg">
+            </div>
+        </div>
+        <h2 style="text-align:center">Our Team</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+                    <div class="container">
+                        <h2>Hemaraj Jupudi</h2>
+                        <p class="title">Team Member</p>
+                        <p>ID: 1001966645</p>
+                        <p>hxj6645@mavs.uta.edu</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <!-- <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+                    <div class="container">
+                        <h2>Ravi Naga Sai Kurapati</h2>
+                        <p class="title">Team Member</p>
+                        <p>ID: 1002027855</p>
+                        <p>rxk7855@mavs.uta.edu</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+                    <div class="container">
+                        <h2>Anil Kumar Kanamaneni</h2>
+                        <p class="title">Team Member</p>
+                        <p>ID: 1002034161</p>
+                        <p>axk4161@mavs.uta.edu</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---- Footer -->
+    <section class="footer">
+        <h2>Address</h2>
+        <p style="font-size: 15px;"> 400 Spaniolo Drive Arlington, TX US 76010-1628</p>
+        <h2 style="margin-top: 30px;">Store Hours</h2>
+        <p style="font-size: 15px;"> Monday - 8am to 6pm <br> Tuesday - 8am to 6pm <br> Wednesday - 8am to 6pm <br>
+            Thursday - 8am to 6pm <br> Friday - 8am to 5pm <br>
+            Saturday - 10am to 4pm <br> Sunday - Closed</p>
+        <h2 style="margin-top: 30px;">Contact Details</h2>
+        <p style="font-size: 15px;"> Reach us at: (458) 999-9999 </p>
+        <h2 style="margin-top: 30px;">Additional Information</h2>
+        <p style="font-size: 15px;"> Pickup location Same as address </p>
+
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made By Team 9</i></p>
+    </section>
+
+
+</body>
+
+</html>
